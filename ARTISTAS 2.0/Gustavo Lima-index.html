@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reprodutor de Música</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            background-image: url(../Imagens/background.png.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .player {
+            display: flex;
+            align-items: center;
+            background-color: #282828;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 600px;
+            max-width: 90%;
+        }
+
+        .cover img {
+            border-radius: 5px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .controls-container {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .info {
+            flex: 1;
+            color: #ffffff;
+        }
+
+        .track-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+        }
+
+        .control-button {
+            background-color: #1db954;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            font-size: 24px;
+            height: 50px;
+            width: 50px;
+            margin: 0 10px;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .control-button:hover {
+            background-color: #1ed760;
+        }
+
+        .control-button:focus {
+            outline: 2px solid #1db954;
+        }
+    </style>
+</head>
+<body>
+    <div class="player">
+        <div class="cover">
+            <img src="../Imagens/embaixador.jpg" alt="Capa do Álbum 'Embaixador falando de Amor">
+        </div>
+        <div class="controls-container">
+            <div class="info">
+                <p class="track-name">Gustavo Lima - Embaixador Falando de amor</p>
+            </div>
+            <audio id="audioPlayer">
+                <source src="embaixador falando de amor.m4a" type="audio/webm">
+               
+            </audio>
+            <div class="controls">
+                <button id="playButton" class="control-button">▶</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de JavaScript -->
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            var audio = document.getElementById('audioPlayer');
+            if (audio.paused) {
+                audio.play();
+                this.textContent = '⏸'; // Altera o ícone para pausa
+            } else {
+                audio.pause();
+                this.textContent = '▶'; // Altera o ícone para play
+            }
+        });
+    </script>
+</body>
+</html>

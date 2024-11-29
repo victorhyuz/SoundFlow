@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário - Música Mania</title>
+    <style>
+        body {
+            background-image: url(./Imagens/background.png.webp);
+            font-family: Arial, sans-serif;
+            color: #eee;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #32cd32;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #ddd;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background: #2a2a2a;
+            color: #eee;
+        }
+        .form-group input:focus {
+            border-color: #32cd32;
+            outline: none;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background: #32cd32;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background: #28a745;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-footer a {
+            color: #32cd32;
+            text-decoration: none;
+        }
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label> 
+                <input type="password" id="password" name="password" required> 
+            </div>
+            <div class="form-group"> <br>
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

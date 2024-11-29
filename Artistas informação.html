@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página dos Artistas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1818;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #282828;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .artist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .artist-info {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background-color: #3b3a3a;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(238, 238, 238, 0.24);
+        }
+
+        .artist-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #006400;
+        }
+
+        .artist-info div {
+            max-width: 500px;
+        }
+
+        .artist-info h2 {
+            color: #00ff00;
+            margin: 0 0 10px 0;
+        }
+
+        .bio {
+            margin: 0;
+        }
+
+        .footer-text {
+            color: #bbb9b9;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .logo {
+            margin: 10px;
+        }
+
+        .logo img {
+            height: 100%;
+            object-fit: contain;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .logo img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .logo img.grow {
+            transform: scale(1.5);
+        }
+
+        .h1 {
+            margin: 0px 500px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <div class="logo">
+            <div class="h1"><h1>▁ ▂ ▄ ▅ ▆ ▇ █ ARTISTAS █ ▇ ▆ ▅ ▄ ▂ ▁</h1></div>
+            
+
+            <img src="./Imagens/logo.png" alt="SOUND&FLOW" />
+
+            <script>
+                document.querySelector('.logo img').addEventListener('click', function () {
+                    this.classList.toggle('grow');
+                });
+            </script>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+        <div class="artist-grid">
+            <!-- Artista 1 -->
+            <div class="artist-info">
+                <img src="./Imagens/ana_castela.jpg" alt="Ana Castela">
+                <div>
+                    <h2>Ana Castela</h2>
+                    <p class="bio">
+                        Ana Castela é uma cantora e compositora brasileira que tem se destacado no cenário musical com
+                        seu estilo inovador.
+
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 2 -->
+            <div class="artist-info">
+                <img src="./Imagens/ariana_grande.webp" alt="Ariana Grande">
+                <div>
+                    <h2>Ariana Grande</h2>
+                    <p class="bio">
+                        Ariana Grande é uma cantora pop americana famosa por sua voz impressionante e hits como 'Thank
+                        U, Next'.
+
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 3 -->
+            <div class="artist-info">
+                <img src="./Imagens/marilia_mendonca.jpg" alt="Marília Mendonça">
+                <div>
+                    <h2>Marília Mendonça</h2>
+                    <p class="bio">
+                        Marília Mendonça foi uma influente cantora sertaneja brasileira, conhecida por hits como
+                        'Infiel'. Seu talento e letras emocionantes a
+                        consagraram como uma das maiores vozes do gênero."
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 4 -->
+            <div class="artist-info">
+                <img src="./Imagens/rihanna.jpg" alt="Rihanna">
+                <div>
+                    <h2>Rihanna</h2>
+                    <p class="bio">
+                        Rihanna é uma cantora e empresária barbadense, famosa por hits como 'Umbrella' e 'Diamonds'. Sua
+                        carreira de sucesso é marcada por sua
+                        versatilidade musical e inovações na moda e beleza.
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 5 -->
+            <div class="artist-info">
+                <img src="./Imagens/safadao.jpg" alt="Wesley Safadão">
+                <div>
+                    <h2>Wesley Safadão</h2>
+                    <p class="bio">
+                        Wesley Safadão é um cantor brasileiro de forró, famoso por hits como 'Camarote'. Seu estilo
+                        energético e carisma o destacam na música brasileira.
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 6 -->
+            <div class="artist-info">
+                <img src="./Imagens/gusttavo_lima.jpg" alt="Gustavo lima">
+                <div>
+                    <h2>Gustavo Lima</h2>
+                    <p class="bio">
+                        Gustavo Lima é um famoso cantor sertanejo brasileiro, conhecido por hits como 'Balada'. Seu
+                        estilo marcante o destaca na música sertanej
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 7 -->
+            <div class="artist-info">
+                <img src="./Imagens/iza.jpg" alt="Iza">
+                <div>
+                    <h2>Iza</h2>
+                    <p class="bio">
+                        Iza é uma renomada cantora brasileira de pop e R&B, conhecida por hits como 'Pesadão'. Sua voz
+                        poderosa e estilo único a destacam na música nacional.
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 8 -->
+            <div class="artist-info">
+                <img src="./Imagens/henrique_juliano.avif" alt="Henrique e Juliano">
+                <div>
+                    <h2>Henrique e Juliano</h2>
+                    Henrique e Juliano são uma dupla sertaneja brasileira, conhecidos por hits como 'Dúvida'. Eles são
+                    destacados por seu estilo envolvente e sucesso no sertanejo.
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 9 -->
+            <div class="artist-info">
+                <img src="./Imagens/lana_rey.jfif" alt="Lana del rey">
+                <div>
+                    <h2>Lana Del Rey</h2>
+                    <p class="bio">
+                        Lana Del Rey é uma cantora e compositora americana, famosa por seu estilo melancólico e hits
+                        como 'Summertime Sadness'. Seu som único combina
+                        elementos de pop, indie e nostalgia.
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 10 -->
+            <div class="artist-info">
+                <img src="./Imagens/weekend.webp" alt="Weeknd">
+                <div>
+                    <h2>Weeknd</h2>
+                    <p class="bio">
+                        The Weeknd é um cantor e compositor canadense, conhecido por hits como 'Blinding Lights' e
+                        'Starboy'. Seu estilo inovador mistura R&B, pop e música eletrônica.
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 11 -->
+            <div class="artist-info">
+                <img src="./Imagens/luan_santana" alt="Luan Santana">
+                <div>
+                    <h2>Luan Santana</h2>
+                    <p class="bio">
+                        Luan Santana é um renomado cantor sertanejo brasileiro, conhecido por sucessos como 'Te
+                        Esperando' e 'Meteoro'. Sua voz marcante e carisma o destacam na música sertaneja.
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 12 -->
+            <div class="artist-info">
+                <img src="./Imagens/anitta.jpg" alt="Anitta">
+                <div>
+                    <h2>Anitta</h2>
+                    <p class="bio">
+                        Anitta é uma cantora e empresária brasileira, famosa por hits como 'Show das Poderosas' e
+                        'Envolver'. Ela é conhecida por sua versatilidade musical e impacto global.
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 13 -->
+            <div class="artist-info">
+                <img src="./Imagens/gustavo_mioto.png" alt="Gustavo Lima">
+                <div>
+                    <h2>Gustavo Mioto</h2>
+                    <p class="bio">
+                        Gustavo Mioto é um popular cantor sertanejo brasileiro, conhecido por sucessos como 'Solteiro
+                        Não Trai'. Seu estilo cativante e presença de palco o destacam na música sertaneja.
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 13 -->
+            <div class="artist-info">
+                <img src="./Imagens/taylor_swif.png" alt="Taylor Swift">
+                <div>
+                    <h2>Taylor Swift</h2>
+                    <p class="bio">
+                        Taylor Swift é uma cantora e compositora americana, conhecida por sua transição do country ao
+                        pop e suas letras pessoais. Ela é uma das artistas mais influentes da música contemporânea.
+                    </p>
+                </div>
+            </div>
+            <!-- Artista 13 -->
+            <div class="artist-info">
+                <img src="./Imagens/pdrao.jpg" alt="Pdrão">
+                <div>
+                    <h2>Pdrão</h2>
+                    <p class="bio">
+                        Pdrão, nosso querido professor, além de um execente atleta também é músico! Fazendo sucesso no
+                        Youtube, Spotify e mais! Amamos você Pdrão.
+                    </p>
+                </div>
+
+            </div>
+            <!-- Artista 13 -->
+            <div class="artist-info">
+                <img src="./Imagens/luan_santana" alt="Luan Pereira">
+                <div>
+                    <h2>Luan Pereira</h2>
+                    <p class="bio">
+                        Luan Pereira é um cantor e compositor brasileiro, conhecido por suas músicas no estilo
+                        sertanejo. Ele ganhou destaque na cena musical com seu talento e estilo distintivo.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+</body>
+
+
+
+</html>

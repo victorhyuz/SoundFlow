@@ -1,0 +1,277 @@
+body {
+  background-position: center;
+  color: rgb(255, 255, 255);
+  background-color: #1a1818;
+}
+
+
+header {
+  background-color: #282828;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.botao {
+  padding: 15px;
+}
+
+.breadcrumb {
+  background-color: #282828;
+  color: #ffffff;
+  margin: 0;
+}
+
+#col1 {
+  margin: 20px 0;
+}
+
+.cover img{
+  width: 300px;
+  height: 300px;
+  border-radius: 3%;
+}
+
+#col1 a {
+  display: block;
+  color: #1db954;
+  /* Cor semelhante ao verde do Spotify */
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+#col1 a:hover {
+  text-decoration: underline;
+}
+
+#circulos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* Ajusta o espaço entre as imagens */
+}
+
+.artist {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+}
+
+.rounded-circle {
+  width: 120px;
+  /* Ajuste o tamanho conforme necessário */
+  height: 120px;
+  /* Ajuste o tamanho conforme necessário */
+  object-fit: cover;
+  /* Mantém a proporção da imagem dentro do círculo */
+  border-radius: 50%;
+}
+
+.rounded {
+  width: 120px;
+  /* Ajuste o tamanho conforme necessário */
+  height: 120px;
+  /* Ajuste o tamanho conforme necessário */
+  object-fit: cover;
+  /* Mantém a proporção da imagem dentro do círculo */
+  border-radius: 50%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: -20px;
+  /* Ajusta a posição do texto abaixo da imagem */
+  left: 0;
+  right: 0;
+  background: none;
+  /* Remove o fundo */
+  color: #ffffff;
+  /* Cor do texto em branco */
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+  /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.artistas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.artista {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.artista img {
+  width: 48px;
+  height: 48px;
+}
+
+.artista p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  margin: 10px;
+
+}
+
+/* estilo.css */
+.logo {
+  margin: 10px;
+}
+
+.logo img {
+  height: 100%;
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.intro {
+  width: 110px;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.cover {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-basis: 33.33%;
+  padding: 10px;
+}
+
+a {
+  color: #bbb9b9;
+  text-align: center;
+}
+
+
+.footer-text {
+  color: #bbb9b9;
+}
+
+.tocadas {
+  width: 300px;
+  height: 60px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.tocadas img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-left: 7px;
+}
+
+.tocadas p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  margin: 10px;
+
+}
+
+/* styles.css */
+/* styles.css */
+/* styles.css */
+.header {
+  padding: 20px;
+  background-image: url('./Imagens/background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul {
+  font-family: 'Arial Narrow Bold', sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none; 
+}
+
+.travel-destination {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  background-color: rgb(243, 241, 236);
+  text-align: center;
+  display: inline-block;
+  box-shadow: 7px 5px 5px black;
+  border-radius: 10px
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: rgb(190, 177, 177);
+}
+
+.logo img {
+  transition: transform 0.3s ease; /* Animação suave para o crescimento */
+  cursor: pointer; /* Muda o cursor para indicar que é interativo */
+}
+
+/* Classe adicional para aumentar o tamanho da imagem */
+.logo img.grow {
+  transform: scale(1.5); /* Aumenta a imagem para 150% do seu tamanho original */
+}
+
